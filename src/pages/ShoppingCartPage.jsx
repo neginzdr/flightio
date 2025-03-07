@@ -13,15 +13,16 @@ export default function ShoppingCartPage() {
     setProductData(Shop);
   }, []);
 
-  useEffect(()=>{
+  useEffect(() => {
     fetch(`https://fakestoreapi.com/products/${params.id}`)
-    .then((response) => response.json())
-    .then((data) => {
-      localStorage.setItem("shopping", JSON.stringify(data));
-      setProductData(data);
-    });
-  },[])
-console.log(productData)
+      .then((response) => response.json())
+      .then((data) => {
+        localStorage.setItem("shopping", JSON.stringify(data));
+        setProductData(data);
+      });
+  }, []);
+
+  console.log(productData);
 
   if (!productData) {
     return <h1>loading</h1>;

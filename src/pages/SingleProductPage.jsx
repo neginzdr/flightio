@@ -18,8 +18,7 @@ export default function SingleProductPage() {
     return <h1>loading</h1>;
   }
 
-  function handleShopping({product}) {
-   
+  function handleShopping({ product }) {
     // let cart = JSON.parse(localStorage.getItem("shopping")) || [];
     // if(!Array.isArray(cart)){
     //   cart=[];
@@ -27,7 +26,7 @@ export default function SingleProductPage() {
     // cart.push(product)
     // localStorage.setItem("Shopping",JSON.stringify(cart))
     // console.log(cart)
-    navigate(`/shopping/${productData.id}`,{state:{}});
+    navigate(`/shopping/${productData.id}`, { state: {} });
   }
 
   return (

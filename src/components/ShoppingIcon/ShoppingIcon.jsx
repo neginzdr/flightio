@@ -3,7 +3,7 @@ import Badge, { badgeClasses } from "@mui/material/Badge";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { IconButton } from "@mui/material";
 
-export default function ShoppingIcon({onClick}) {
+export default function ShoppingIcon({ onClick }) {
   const CartBadge = styled(Badge)`
     & .${badgeClasses.badge} {
       top: -12px;
